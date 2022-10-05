@@ -1,0 +1,146 @@
+.btn {
+    cursor: pointer;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    color: var(--clr-neutral-100);
+    padding: 0.75rem 2.5rem;
+    background-color: var(--clr-accent-blue-light);
+    display: block;
+    max-width: max-content;
+    font-weight: 700;
+    text-align: center;
+    min-width: 15rem;
+    text-transform: uppercase;
+
+    &.center {
+        margin-inline: auto;
+    }
+
+    &.outlined {
+        background: none;
+        border: 2px solid var(--clr-neutral-100);
+        padding-inline: 3rem;
+
+        &:hover,
+        &:focus {
+            transition: transform 300ms linear;
+            will-change: transform;
+            transform: translateY(-8px);
+        }
+    }
+
+    &.mt {
+        margin-top: 2.5rem;
+    }
+
+    &:hover,
+    &:focus {
+        transition: filter 300ms linear;
+        will-change: filter;
+        filter: brightness(0.85);
+    }
+
+    @media (max-width: 1200px) {
+        display: none;
+    }
+}
+
+.section-title {
+    font-size: clamp(1.8rem, 3.5vw, 2.45rem);
+    line-height: 1.3;
+    max-width: var(--width, unset);
+    margin-bottom: 2.25rem;
+
+    &.center {
+        margin-inline: auto;
+        text-align: center;
+    }
+
+    br {
+        display: none;
+    }
+}
+
+.blue-divider {
+    background-color: var(--clr-accent-blue);
+    color: var(--clr-neutral-100);
+    padding-block: 4rem;
+    text-align: center;
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+
+        li {
+            line-height: 1.1;
+        }
+
+        li:not(:last-child) {
+            padding-right: 0.5rem;
+            border-right: 2px solid var(--clr-neutral-100);
+        }
+    }
+
+    font-size: 1.125rem;
+}
+
+.split {
+    &__container {
+        display: grid;
+        gap: 3rem;
+        grid-template-areas:
+            "content"
+            "image";
+
+        &.reverse {
+            grid-template-areas:
+                "content"
+                "image";
+        }
+
+        .content {
+            grid-area: content;
+        }
+
+        .image {
+            grid-area: image;
+
+            img {
+                margin-inline: auto;
+            }
+        }
+
+        @media (min-width: 45em) {
+            grid-template-areas: "content image";
+            align-items: center;
+
+            &.reverse {
+                grid-template-areas: "image content";
+            }
+        }
+
+        @media (min-width: 75em) {
+            gap: 6rem;
+        }
+    }
+}
+
+.flex-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    li {
+        line-height: 1.1;
+    }
+
+    li:not(:first-child) {
+        padding-left: 0.5rem;
+        border-left: 1px solid var(--clr-neutral-600);
+    }
+}

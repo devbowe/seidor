@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src =
+          "https://www.googletagmanager.com/gtm.js?id=GTM-PXQ76DS" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seidor Up | Jornada Empresa Inteligente</title>
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Garanta a integração e automatização de processos de negócios sem elevados investimentos iniciais. Conheça o Seidor Up!"
+    />
+    <meta name="keywords" content="" />
+
+    <!-- Socials -->
+    <meta
+      property="og:title"
+      content="Seidor Up | Jornada Empresa Inteligente"
+    />
+    <meta
+      property="og:description"
+      content="Garanta a integração e automatização de processos de negócios sem elevados investimentos iniciais. Conheça o Seidor Up!"
+    />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+
+    <meta
+      name="twitter:title"
+      content="Seidor Up | Jornada Empresa Inteligente"
+    />
+    <meta
+      name="twitter:description"
+      content="Garanta a integração e automatização de processos de negócios sem elevados investimentos iniciais. Conheça o Seidor Up!"
+    />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:card" content="" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/png"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--External Libs-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PXQ76DS"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!--Buttom Mobile-->
+    <button
+      class="primary-button"
+      id="mobile-button"
+      onclick="handleModal(true)"
+    >
+      Solicitar cotação
+    </button>
+
+    <!--Logo Section-->
+    <div id="logo">
+      <figure>
+        <img src="./assets/img/logo.svg" alt="Logo da empresa SeidorUp" />
+      </figure>
+    </div>
+
+    <!-- Fist Section -->
+    <section id="first">
+      <div class="container">
+        <div class="box">
+          <div class="text">
+            <h1>
+              Dê um up no seu negócio com
+              <span
+                >soluções digitais baseadas no
+                <strong>SAP Business One</strong></span
+              >
+              pensadas para automatização de processos e gestão empresarial
+            </h1>
+            <h2>
+              Um salto para <span>otimizar processos</span> e atender às
+              principais necessidades tecnológicas das empresas em crescimento.
+            </h2>
+          </div>
+          <div class="partners">
+            <ul>
+              <li>
+                <figure>
+                  <img
+                    src="./assets/img/logo-seidor.png"
+                    alt="Logo da empresa Seidor"
+                  />
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img
+                    src="./assets/img/partner-sap-business-one.svg"
+                    alt="Logo da empresa SAP"
+                  />
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img
+                    src="./assets/img/partner-sap-platinum.svg"
+                    alt="Logo da empresa SAP Platinum"
+                  />
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-form">
+            <img
+              src="./assets/img/icon-close.svg"
+              alt="Ícone com símbolo Xis"
+              id="close-icon"
+              onclick="handleModal(false)"
+            />
+            <h3>
+              Preencha o formulário para conversar com nossos especialistas e
+              otimizar processos empresariais.
+            </h3>
+            <form id="contact">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Nome*"
+                pattern="[A-Za-z ]+"
+                title="Números não são aceitos"
+                class="required"
+              />
+              <select name="cf_indique_o_seu_cargo" id="cargo" class="required">
+                <option value="">Cargo*</option>
+                <option value="Analista">Analista</option>
+                <option value="Gerente">Gerente</option>
+                <option value="Diretor">Diretor</option>
+                <option value="Proprietário">Proprietário</option>
+                <option value="Outros">Outros</option>
+              </select>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail corporativo*"
+                class="required"
+              />
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Telefone*"
+                class="required"
+              />
+              <input
+                type="text"
+                name="business"
+                id="business"
+                placeholder="Empresa*"
+                class="required"
+              />
+              <select class="required" name="cf_segmento" id="segmento">
+                <option value="">Segmento*</option>
+                <option value="Agronegócios">Agronegócios</option>
+                <option value="Automotivo">Automotivo</option>
+                <option value="Banco">Banco</option>
+                <option value="Distribuição">Distribuição</option>
+                <option value="Esportes e Entretenimento">
+                  Esportes e Entretenimento
+                </option>
+
+                <option value="Indústria">Indústria</option>
+
+                <option value="Mineiração">Mineiração</option>
+                <option value="Mídia">Mídia</option>
+                <option value="Produtos Texteis">Produtos Texteis</option>
+                <option value="Serviços">Serviços</option>
+                <option value="Tecnologia">Tecnologia</option>
+                <option value="Telecomunicações">Telecomunicações</option>
+                <option value="Transporte e Logística">
+                  Transporte e Logística
+                </option>
+                <option value="Turismo e Viagens">Turismo e Viagens</option>
+                <option value="Utilities">Utilities</option>
+                <option value="Varejo">Varejo</option>
+                <option value="Óleo e Gás">Óleo e Gás</option>
+                <option value="Outros">Outros</option>
+              </select>
+
+              <select
+                name="tipo-industria"
+                id="tipo-industria"
+                style="display: none"
+              >
+                <option value="">Selecione uma indústria</option>
+                <option value="Indústria de Alimentos">
+                  Indústria de Alimentos
+                </option>
+                <option value="Indústria de Bens de Consumo">
+                  Indústria de Bens de Consumo
+                </option>
+                <option value="Indústria de Cosméticos">
+                  Indústria de Cosméticos
+                </option>
+                <option value="Indústria de Metais">Indústria de Metais</option>
+                <option value="Indústria de Máquinas e Componentes">
+                  Indústria de Máquinas e Componentes
+                </option>
+                <option value="Indústria de Papel e Celulose">
+                  Indústria de Papel e Celulose
+                </option>
+                <option value="Indústria Materiais de Construção">
+                  Indústria Materiais de Construção
+                </option>
+                <option value="Indústria Metalúrgica">
+                  Indústria Metalúrgica
+                </option>
+                <option value="Indústria Química e Farmacêutica">
+                  Indústria Química e Farmacêutica
+                </option>
+              </select>
+
+              <select
+                name="tipo-servico"
+                id="tipo-servico"
+                style="display: none"
+              >
+                <option value="">Selecione um serviço</option>
+                <option value="Consultoria">Consultoria</option>
+                <option value="Educação">Educação</option>
+                <option value="Engenharia e Construção">
+                  Engenharia e Construção
+                </option>
+                <option value="Segurança">Segurança</option>
+                <option value="Seguros">Seguros</option>
+                <option value="Saúde">Saúde</option>
+                <option value="Profissionais">Profissionais</option>
+                <option value="Públicos ">Públicos</option>
+              </select>
+
+              <select name="cf_faturamento" id="faturamento" class="required">
+                <option value="">Faturamento*</option>
+                <option value="Abaixo de 30 milhões">
+                  Abaixo de 30 milhões
+                </option>
+                <option value="Entre 30 e 99 milhões">
+                  Entre 30 e 99 milhões
+                </option>
+                <option value="Entre 100 e 400 milhões">
+                  Entre 100 e 400 milhões
+                </option>
+                <option value="Acima de 400 milhões">
+                  Acima de 400 milhões
+                </option>
+              </select>
+              <select
+                name="cf_numero_de_funcionarios"
+                id="number-of-employees"
+                title="Selecione o número de funcionários da sua empresa"
+                class="required"
+              >
+                <option value="">N° de Funcionários*</option>
+                <option value="1 a 49 pessoas">1 a 49 pessoas</option>
+                <option value="50 a 99 pessoas">50 a 99 pessoas</option>
+                <option value="100 a 499 pessoas">100 a 499 pessoas</option>
+                <option value="Acima de 500 pessoas">
+                  Acima de 500 pessoas
+                </option>
+              </select>
+              <label for="accept-legal">
+                <input
+                  type="checkbox"
+                  name="cf_estou_ciente_que_ao_enviar_esse_formulario_os_dados_ins"
+                  id="accept-legal"
+                  class="required"
+                />
+                Estou ciente que ao enviar esse formulário, os dados inseridos
+                serão entregues e armazenados pela empresa para fins de contato.
+                Os dados informados nunca serão divulgados a terceiros.*
+              </label>
+              <button type="button" class="primary-button" id="submit-button">
+                Solicitar cotação
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Second Section -->
+    <section id="second">
+      <div class="container">
+        <div class="titles">
+          <h2>
+            Conjunto de serviços sem elevados investimentos iniciais e pagamento
+            facilitado
+          </h2>
+          <h3>A transformação digital a poucos passos do seu negócio</h3>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <figure>
+              <img
+                src="./assets/img/icone-saas.svg"
+                alt="Imagem com a sigla saas"
+                width="200"
+                height="200"
+              />
+            </figure>
+            <p>
+              Valor único mensal para ERP, serviços, suporte e infraestrutura.
+            </p>
+          </div>
+
+          <div class="card">
+            <figure>
+              <img
+                src="./assets/img/icon-gear.svg"
+                alt="Imagem com ícone de engrenagem"
+                width="200"
+                height="200"
+              />
+            </figure>
+            <p>Soluções específicas para cada cliente.</p>
+          </div>
+
+          <div class="card">
+            <figure>
+              <img
+                src="./assets/img/icon-service-cloud.svg"
+                alt="Imagem com ícone de servidor em nuvem"
+                width="200"
+                height="200"
+              />
+            </figure>
+            <p>Fornecedor único para serviços, operações e sustentação.</p>
+          </div>
+        </div>
+        <div class="box-button">
+          <button class="primary-button" onclick="scrollToForm()">
+            Quero transformação digital
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--Third Section-->
+    <section id="third">
+      <div class="container">
+        <div class="titles">
+          <h2>Uma jornada completa rumo à empresa inteligente</h2>
+          <h3>
+            Para atender às principais necessidades de uma empresa em
+            crescimento, proporcionamos soluções especializadas de otimização de
+            processos.
+          </h3>
+        </div>
+
+        <!--Seção dos passos da jornada para telas maiores-->
+        <div class="section-steps">
+          <div class="imagem-steps">
+            <img
+              src="./assets/img/jornada-up.jpg"
+              alt="Imagem de vector de uma rua contendo os passos para tornar a empresa inteligente"
+            />
+          </div>
+
+          <!--Seção dos passos da jornada para telas maiores-->
+          <div class="steps-large-devices">
+            <div class="first">
+              <div class="title" onclick="handleOpenContent('.first')">
+                <img
+                  src="./assets/img/icon-step-globe.svg"
+                  alt="ícone de globo"
+                />
+                <p>1ª ETAPA - Ponto de Partida</p>
+                <span>+</span>
+              </div>
+              <div class="content">
+                <div class="wrapper">
+                  <div class="box">
+                    Para iniciar a jornada rumo à empresa inteligente, foco na
+                    experiência, melhores práticas e soluções pré-configuradas
+                    para o seu negócio.
+                  </div>
+                  <div class="box">
+                    <img
+                      src="./assets/img/icon-lamp-and-gear.svg"
+                      alt="imagem em vetor de uma engrenagem"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="second">
+              <div class="title" onclick="handleOpenContent('.second')">
+                <img
+                  src="./assets/img/icon-step-gear.svg"
+                  alt="ícone de uma engrenagem"
+                />
+                <p>2ª ETAPA - Transformação Tecnológica</p>
+                <span>+</span>
+              </div>
+              <div class="content">
+                <div class="wrapper">
+                  <div class="box">
+                    <p>
+                      Seguimos com um portfólio de aplicativos inteligentes,
+                      incluídos e integrados ao ERP SAP Business One.
+                    </p>
+                    <p>
+                      Solução única e integrada que proporciona uma visão
+                      completa de todo o negócio e um controle total das suas
+                      operações. Todas as funcionalidades do SAP Business One
+                      para o seu negócio, com rápida implementação e acesso às
+                      informações de qualquer lugar pelo aplicativo.
+                    </p>
+                  </div>
+                  <div class="box">
+                    <div class="text">
+                      <p>
+                        Além de aplicativos inteligentes by Seidor para otimizar
+                        os processos:
+                      </p>
+                      <ul>
+                        <li>➤ Suíte Fiscal 4TAX Cloud</li>
+                        <li>➤ Seidor Billing</li>
+                        <li>➤ Seidor Mobile Street Sales</li>
+                        <li>➤ Portal de Compras e Vendas</li>
+                        <li>➤ Monitoramento de Redes Sociais e muito mais</li>
+                      </ul>
+                    </div>
+                    <div class="image-logo-seidor-up">
+                      <img
+                        src="./assets/img/logo-step-sap-business-one.svg"
+                        alt="Logo da empresa SAP Business One"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="third">
+              <div class="title" onclick="handleOpenContent('.third')">
+                <img
+                  src="./assets/img/icon-step-cloud-conections-title.svg"
+                  alt="ícone de nuvem com linhas de conexão"
+                />
+                <p>3ª ETAPA - Serviços & Infraestrutura</p>
+                <span>+</span>
+              </div>
+              <div class="content">
+                <div class="wrapper">
+                  <div class="box">
+                    <p>
+                      Conte com um centro para serviços de suporte e
+                      infraestrutura completa e inteligente para apoiar seus
+                      objetivos de negócio e de TI.
+                    </p>
+                    <div class="single-item">
+                      <div class="box">
+                        <img
+                          src="./assets/img/icon-step-attentione.svg"
+                          alt=""
+                        />
+                        <p>
+                          <strong>Seidor AttentiONE</strong>
+                          Serviços de suporte, treinamento e capacitação para
+                          apoiar as necessidades dos clientes.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="items">
+                    <div class="box">
+                      <img
+                        src="./assets/img/icon-step-hand-papper.svg"
+                        alt="ícone de mão segurando um papel"
+                      />
+                      <div class="text">
+                        <h3>BPO Contábil, Fiscal e Financeiro</h3>
+                        <p>
+                          Oferta de Business Process Outsourcing (BPO) que
+                          promove redução de custos por meio da aplicação
+                          massiva de tecnologias.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="box">
+                      <img
+                        src="./assets/img/icon-step-monitor-pencil-gear.svg"
+                        alt="ícone de monitor exibindo uma engrenagem e um lápis"
+                      />
+                      <div class="text">
+                        <h3>Assessoria de Marketing</h3>
+                        <p>
+                          Ferramentas especializadas para atuar com vendas
+                          complexas no mercado enterprise.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="box">
+                      <img
+                        src="./assets/img/icon-step-user-networks.svg"
+                        alt="ícone de um usuário com linhas de conexão"
+                      />
+                      <div class="text">
+                        <h3>Network e Marketplace</h3>
+                        <p>
+                          Integração com plataformas de Marketplace e Redes de
+                          fornecedores, transportadoras e outros ativos.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="box">
+                      <img
+                        src="./assets/img/icon-step-cloud-conections.svg"
+                        alt="ícone de uma nuvem com várias linhas de conexão"
+                      />
+                      <div class="text">
+                        <h3>Seidor Cloud Services</h3>
+                        <p>
+                          Oferece abordagem de infraestrutura multicloud para
+                          atender as necessidades específicas da sua empresa.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="fourth">
+              <div class="title" onclick="handleOpenContent('.fourth')">
+                <img
+                  src="./assets/img/icon-step-target.svg"
+                  alt="ícone de alvo com uma flecha no centro"
+                />
+                <p>4ª ETAPA - Soluções Especializadas</p>
+                <span>+</span>
+              </div>
+              <div class="content">
+                <p>
+                  Para construir a jornada, oferta de soluções especializadas e
+                  completas de acordo com os processos da empresa.
+                </p>
+                <div class="items">
+                  <div class="item">
+                    <h3>B1 4/INDUSTRY</h3>
+                    <p>
+                      Controle custos de produção para maior rentabilidade de
+                      processos básicos até manufatura avançada.
+                    </p>
+                  </div>
+
+                  <div class="item">
+                    <h3>B1 4/DISTRIBUTION</h3>
+                    <p>
+                      Controle total desde o centro de distribuição até a
+                      entrega de produtos.
+                    </p>
+                  </div>
+
+                  <div class="item">
+                    <h3>B1 4/RETAIL</h3>
+                    <p>
+                      Integração de processos de negócios, gestão financeira e
+                      relacionamento com o cliente, conectando físico ao online.
+                    </p>
+                  </div>
+
+                  <div class="item">
+                    <h3>UtilitiesONE</h3>
+                    <p>
+                      Gestão comercial e operacional com soluções de faturamento
+                      confiáveis e robustas.
+                    </p>
+                  </div>
+
+                  <div class="item">
+                    <h3>B1 4/SERVICE</h3>
+                    <p>
+                      Rentabilidade dos contratos a partir de perfeita
+                      capacidade de planejamento e controle de custos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="fifth">
+              <div class="title" onclick="handleOpenContent('.fifth')">
+                <img
+                  src="./assets/img/icon-step-title-presentation.svg"
+                  alt="ícone de um flip chart"
+                />
+                <p>5ª ETAPA - Modelo de Negócio</p>
+                <span>+</span>
+              </div>
+              <div class="content">
+                <div class="box">
+                  <p>
+                    A jornada possui também soluções de Business Process
+                    Intelligence e Analytics para análise contínua do desempenho
+                    empresarial.
+                  </p>
+                  <img
+                    src="./assets/img/icon-step-graphic-search.svg"
+                    alt="ícone de gráfico com uma lupa"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="sixth">
+              <div class="title" onclick="handleOpenContent('.sixth')">
+                <img
+                  src="./assets/img/icon-step-title-chipset-connections.svg"
+                  alt="ícone de nuvem com processador ao meio e linha de conexões"
+                />
+                <p>6ª ETAPA - Empresa Inteligente</p>
+                <span>+</span>
+              </div>
+              <div class="content">
+                <div class="box">
+                  <p>
+                    Chegando ao final da jornada, conte com único núcleo
+                    empresarial com processos transparentes e específicos para
+                    automação de processos empresariais.
+                  </p>
+                  <img
+                    src="./assets/img/icon-step-gears-clock.svg"
+                    alt="ícone com conjuto de engrenagens e um relógio"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Seção dos passos da jornada para telas menores-->
+          <div class="steps-small-devices">
+            <div class="first">
+              <div class="title" onclick="handleOpenModalPopup('.first')">
+                <img
+                  src="./assets/img/icon-step-globe.svg"
+                  alt="ícone de globo"
+                />
+                <p>1ª ETAPA - Ponto de Partida</p>
+                <span>+</span>
+              </div>
+              <div class="content">
+                <img
+                  class="close-button-modal"
+                  src="./assets/img/icon-close.svg"
+                  alt="ícone de xis"
+                  onclick="handleOpenModalPopup('.first')"
+                />
+                <div class="wrapper">
+                  <div class="box">
+                    Para iniciar a jornada rumo à empresa inteligente, foco na
+                    experiência, melhores práticas e soluções pré-configuradas
+                    para o seu negócio.
+                  </div>
+                  <div class="box">
+                    <img
+                      src="./assets/img/icon-lamp-and-gear.svg"
+                      alt="imagem em vetor de uma engrenagem"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="second">
+              <div class="title" onclick="handleOpenModalPopup('.second')">
+                <img
+                  src="./assets/img/icon-step-gear.svg"
+                  alt="ícone de uma engrenagem"
+                />
+                <p>2ª ETAPA - Transformação Tecnológica</p>
+                <span>+</span>
+              </div>
+              <div class="content">
+                <img
+                  class="close-button-modal"
+                  src="./assets/img/icon-close.svg"
+                  alt="ícone de xis"
+                  onclick="handleOpenModalPopup('.second')"
+                />
+                <div class="wrapper">
+                  <div class="box">
+                    <p>
+                      Seguimos com um portfólio de aplicativos inteligentes,
+                      incluídos e integrados ao ERP SAP Business One.
+                    </p>
+                    <p>
+                      Solução única e integrada que proporciona uma visão
+                      completa de todo o negócio e um controle total das suas
+                      operações. Todas as funcionalidades do SAP Business One
+                      para o seu negócio, com rápida implementação e acesso às
+                      informações de qualquer lugar pelo aplicativo.
+                    </p>
+                  </div>
+                  <div class="box">
+                    <div class="text">
+                      <p>
+                        Além de aplicativos inteligentes by Seidor para otimizar
+                        os processos:
+                      </p>
+                      <ul>
+                        <li>➤ Suíte Fiscal 4TAX Cloud</li>
+                        <li>➤ Seidor Billing</li>
+                        <li>➤ Seidor Mobile Street Sales</li>
+                        <li>➤ Portal de Compras e Vendas</li>
+                        <li>➤ Monitoramento de Redes Sociais e muito mais</li>
+                      </ul>
+                    </div>
+                    <div class="image-logo-seidor-up">
+                      <img
+                        src="./assets/img/logo-step-sap-business-one.svg"
+                        alt="Logo da empresa SAP Business One"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="third">
+              <div class="title" onclick="handleOpenModalPopup('.third')">
+                <img
+                  src="./assets/img/icon-step-cloud-conections-title.svg"
+                  alt="ícone de nuvem com linhas de conexão"
+                />
+                <p>3ª ETAPA - Serviços & Infraestrutura</p>
+                <span>+</span>
+              </div>
+              <div class="content">
+                <img
+                  class="close-button-modal"
+                  src="./assets/img/icon-close.svg"
+                  alt="ícone de xis"
+                  onclick="handleOpenModalPopup('.third')"
+                />
+                <div class="wrapper">
+                  <div class="box">
+                    <p>
+                      Conte com um centro para serviços de suporte e
+                      infraestrutura completa e inteligente para apoiar seus
+                      objetivos de negócio e de TI.
+                    </p>
+                    <div class="single-item">
+                      <div class="box">
+                        <img
+                          src="./assets/img/icon-step-attentione.svg"
+                          alt=""
+                        />
+                        <p>
+                          <strong>Seidor AttentiONE</strong>
+                          Serviços de suporte, treinamento e capacitação para
+                          apoiar as necessidades dos clientes.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="items">
+                    <div class="box">
+                      <img
+                        src="./assets/img/icon-step-hand-papper.svg"
+                        alt="ícone de mão segurando um papel"
+                      />
+                      <div class="text">
+                        <h3>BPO Contábil, Fiscal e Financeiro</h3>
+                        <p>
+                          Oferta de Business Process Outsourcing (BPO) que
+                          promove redução de custos por meio da aplicação
+                          massiva de tecnologias.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="box">
+                      <img
+                        src="./assets/img/icon-step-monitor-pencil-gear.svg"
+                        alt="ícone de monitor exibindo uma engrenagem e um lápis"
+                      />
+                      <div class="text">
+                        <h3>Assessoria de Marketing</h3>
+                        <p>
+                          Ferramentas especializadas para atuar com vendas
+                          complexas no mercado enterprise.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="box">
+                      <img
+                        src="./assets/img/icon-step-user-networks.svg"
+                        alt="ícone de um usuário com linhas de conexão"
+                      />
+                      <div class="text">
+                        <h3>Network e Marketplace</h3>
+                        <p>
+                          Integração com plataformas de Marketplace e Redes de
+                          fornecedores, transportadoras e outros ativos.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="box">
+                      <img
+                        src="./assets/img/icon-step-cloud-conections.svg"
+                        alt="ícone de uma nuvem com várias linhas de conexão"
+                      />
+                      <div class="text">
+                        <h3>Seidor Cloud Services</h3>
+                        <p>
+                          Oferece abordagem de infraestrutura multicloud para
+                          atender as necessidades específicas da sua empresa.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="fourth">
+              <div class="title" onclick="handleOpenModalPopup('.fourth')">
+                <img
+                  src="./assets/img/icon-step-target.svg"
+                  alt="ícone de alvo com uma flecha no centro"
+                />
+                <p>4ª ETAPA - Soluções Especializadas</p>
+                <span>+</span>
+              </div>
+              <div class="content">
+                <img
+                  class="close-button-modal"
+                  src="./assets/img/icon-close.svg"
+                  alt="ícone de xis"
+                  onclick="handleOpenModalPopup('.fourth')"
+                />
+                <p>
+                  Para construir a jornada, oferta de soluções especializadas e
+                  completas de acordo com os processos da empresa.
+                </p>
+                <div class="items">
+                  <div class="item">
+                    <h3>B1 4/INDUSTRY</h3>
+                    <p>
+                      Controle custos de produção para maior rentabilidade de
+                      processos básicos até manufatura avançada.
+                    </p>
+                  </div>
+
+                  <div class="item">
+                    <h3>B1 4/DISTRIBUTION</h3>
+                    <p>
+                      Controle total desde o centro de distribuição até a
+                      entrega de produtos.
+                    </p>
+                  </div>
+
+                  <div class="item">
+                    <h3>B1 4/RETAIL</h3>
+                    <p>
+                      Integração de processos de negócios, gestão financeira e
+                      relacionamento com o cliente, conectando físico ao online.
+                    </p>
+                  </div>
+
+                  <div class="item">
+                    <h3>UtilitiesONE</h3>
+                    <p>
+                      Gestão comercial e operacional com soluções de faturamento
+                      confiáveis e robustas.
+                    </p>
+                  </div>
+
+                  <div class="item">
+                    <h3>B1 4/SERVICE</h3>
+                    <p>
+                      Rentabilidade dos contratos a partir de perfeita
+                      capacidade de planejamento e controle de custos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="fifth">
+              <div class="title" onclick="handleOpenModalPopup('.fifth')">
+                <img
+                  src="./assets/img/icon-step-title-presentation.svg"
+                  alt="ícone de um flip chart"
+                />
+                <p>5ª ETAPA - Modelo de Negócio</p>
+                <span>+</span>
+              </div>
+              <div class="content">
+                <img
+                  class="close-button-modal"
+                  src="./assets/img/icon-close.svg"
+                  alt="ícone de xis"
+                  onclick="handleOpenModalPopup('.fifth')"
+                />
+                <div class="box">
+                  <p>
+                    A jornada possui também soluções de Business Process
+                    Intelligence e Analytics para análise contínua do desempenho
+                    empresarial.
+                  </p>
+                  <img
+                    src="./assets/img/icon-step-graphic-search.svg"
+                    alt="ícone de gráfico com uma lupa"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="sixth">
+              <div class="title" onclick="handleOpenModalPopup('.sixth')">
+                <img
+                  src="./assets/img/icon-step-title-chipset-connections.svg"
+                  alt="ícone de nuvem com processador ao meio e linha de conexões"
+                />
+                <p>6ª ETAPA - Empresa Inteligente</p>
+                <span>+</span>
+              </div>
+              <div class="content">
+                <img
+                  class="close-button-modal"
+                  src="./assets/img/icon-close.svg"
+                  alt="ícone de xis"
+                  onclick="handleOpenModalPopup('.sixth')"
+                />
+                <div class="box">
+                  <p>
+                    Chegando ao final da jornada, conte com único núcleo
+                    empresarial com processos transparentes e específicos para
+                    automação de processos empresariais.
+                  </p>
+                  <img
+                    src="./assets/img/icon-step-gears-clock.svg"
+                    alt="ícone com conjuto de engrenagens e um relógio"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-button">
+          <button class="primary-button" onclick="scrollToForm()">
+            Quero iniciar minha jornada
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--Fourth Section-->
+    <section id="fourth">
+      <div class="container">
+        <div class="box">
+          <figure>
+            <img
+              src="./assets/img/logo-attentione.svg"
+              alt="Logo da empresa Seidor AttentiONE"
+              width="398"
+              height="90"
+            />
+          </figure>
+        </div>
+        <div class="box">
+          <div class="text">
+            <h2>Soluções para inovação e transformação digital das empresas</h2>
+            <h3>
+              Uma experiência Premium com a expertise da Seidor para clientes
+              SAP Business One.
+            </h3>
+            <p>
+              Nossa parceria não termina na fase de implementação.
+              Proporcionamos experiência diferenciada de suporte através de um
+              portfólio abrangente de serviços, métodos e ferramentas.
+            </p>
+          </div>
+          <div class="articles">
+            <ul>
+              <li>Amplie o uso e os benefícios do seu SAP Business One;</li>
+              <li>
+                Tenha orientação técnica precisa e dedicada com a expertise da
+                Seidor;
+              </li>
+              <li>Suporte completo HotLine e Chat Seidor;</li>
+              <li>
+                Monitoramento de aplicação On Premise/Cloud e migração
+                plataforma SQL para SAP HANA;
+              </li>
+              <li>Análise de performance e consultoria assistida Seidor.</li>
+            </ul>
+          </div>
+          <div class="box-button">
+            <button class="primary-button" onclick="scrollToForm()">
+              Quero suporte premium
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Fifth Section-->
+    <section id="fifth">
+      <div class="container">
+        <div class="titles">
+          <h2>
+            Melhores práticas e soluções pré-configuradas para padronização de
+            processos empresariais
+          </h2>
+          <p>
+            Conhecimento e experiência para ofertar soluções especializadas e
+            desenvolvidas de acordo com os processos característicos do seu
+            segmento para automatização de processos.
+          </p>
+        </div>
+        <div class="advantages">
+          <div class="box">
+            <figure>
+              <img
+                src="./assets/img/logo-seidor-up.svg"
+                alt="Logo da empresa Seidor UP"
+              />
+            </figure>
+          </div>
+          <div class="box">
+            <ul>
+              <li>
+                +500 clientes de indústria, distribuidoras, varejo, utilities e
+                serviços;
+              </li>
+              <li>Especialista em projetos de alta complexidade;</li>
+              <li>Expertise do maior parceiro global SAP Business One.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="box-button">
+          <button class="secondary-button" onclick="scrollToForm()">
+            Quero automatizar processos
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="sixth">
+      <div class="container">
+        <div class="titles">
+          <h3>
+            Junte-se aos clientes que já iniciaram sua transformação digital com
+            Seidor Up
+          </h3>
+          <p>
+            Otimize processos e integre soluções e serviços tecnológicos para o
+            crescimento da sua empresa.
+          </p>
+        </div>
+        <div class="carrousel" id="partners">
+          <a
+            href="https://www.seidorbrasil.com.br/Content/FileCenter/seidor/cases/CASE%20ARENA%20MRV%20SEIDOR%20SAP.pdf"
+            target="_blank"
+          >
+            <figure>
+              <img
+                src="./assets/img/partner-arena-mrv.png"
+                alt="Logo da empresa Arena MRV"
+              />
+            </figure>
+          </a>
+
+          <a
+            href="https://www.seidorbrasil.com.br/Content/FileCenter/seidor/cases/CASE%20BBLEND%20SEIDOR%20SAP.pdf"
+            target="_blank"
+          >
+            <figure>
+              <img
+                src="./assets/img/partner-bblend.png"
+                alt="Logo da empresa B.Blend"
+              />
+            </figure>
+          </a>
+
+          <a
+            href="https://www.seidorbrasil.com.br/Content/FileCenter/seidor/cases/CASE%20Clube%20Atl%C3%A9tico%20Mineiro%20(CAM)%20SEIDOR%20SAP.pdf"
+            target="_blank"
+          >
+            <figure>
+              <img
+                src="./assets/img/partner-atletico.png"
+                alt="Logo do time Atlético mineiro"
+              />
+            </figure>
+          </a>
+
+          <a
+            href="https://www.seidorbrasil.com.br/Content/FileCenter/seidor/cases/CASE%20SOLINFTEC%20SEIDOR%20SAP.pdf"
+            target="_blank"
+          >
+            <figure>
+              <img
+                src="./assets/img/partner-solinftec.png"
+                alt="Logo da empresa SolinFtec"
+              />
+            </figure>
+          </a>
+
+          <a
+            href="https://www.seidorbrasil.com.br/Content/FileCenter/seidor/cases/CASE%20VULCABRAS%20SEIDOR%20SAP.pdf"
+            target="_blank"
+          >
+            <figure>
+              <img
+                src="./assets/img/partner-vulcabras.png"
+                alt="Logo da empresa Vulcabras"
+              />
+            </figure>
+          </a>
+
+          <a
+            href="https://www.seidorbrasil.com.br/Content/FileCenter/seidor/cases/CASE%20FRAS-LE%20RANDON%20SEIDOR%20SAP.pdf"
+            target="_blank"
+          >
+            <figure>
+              <img
+                src="./assets/img/partner-frasle.png"
+                alt="Logo da empresa Fras-le"
+              />
+            </figure>
+          </a>
+        </div>
+        <div class="box-button">
+          <button class="primary-button" onclick="scrollToForm()">
+            Quero otimizar processos
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="box">
+          <figure>
+            <img
+              src="./assets/img/logo-seidor-rodape.png"
+              alt="Imagem que contém logo da Seidor, SAP Platinum partner e SAP pinnacle awards 2021 "
+            />
+          </figure>
+        </div>
+        <div class="box">
+          <p>
+            Copyright © <span id="date"></span>. Todos os Direitos Reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Main Script -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Slick Carousel -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Data Mask -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-mask-plugin@1.14.16/dist/jquery.mask.min.js"></script>
+
+    <!-- INTEGRAÇÃO RD STATION -->
+    <script
+      type="text/javascript"
+      async
+      src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/279dff83-5ddf-487b-be6f-9fd7f0733101-loader.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://d335luupugsy2.cloudfront.net/js/integration/stable/rd-js-integration.min.js"
+    ></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

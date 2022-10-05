@@ -1,0 +1,64 @@
+.tp {
+    background-color: rgba(0 0 0 / 0.5);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-image: url("../../images/tp/tp-bg.png");
+
+    color: var(--clr-neutral-100);
+
+    padding-block: var(--spacing);
+    min-height: 100vh;
+
+    @media (min-width: 800px) {
+        background-color: var(--clr-accent-blue-dark);
+        background-blend-mode: unset;
+    }
+
+    h1 {
+        padding-top: var(--spacing);
+        padding-bottom: 4.375rem;
+        font-size: clamp(2rem, 3.5vw, 3.5rem);
+    }
+
+    p {
+        font-size: 1.25rem;
+        max-width: 50ch;
+    }
+
+    p + p {
+        margin-top: 2rem;
+    }
+
+    &__footer {
+        padding-top: 5.75rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 4rem;
+
+        > div {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        > img {
+            width: 37.5rem;
+            max-width: 100%;
+        }
+    }
+
+    .btn {
+        display: block !important;
+    }
+
+    .social {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.85rem;
+    }
+}

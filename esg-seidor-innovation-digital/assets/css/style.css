@@ -1,0 +1,627 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: calc(60% + 0.8vmin) !important;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: var(--text-body);
+}
+
+/* Global Styles */
+:root {
+  --font-h1: 34px;
+  --font-h2: 30px;
+  --font-h3: 24px;
+  --font-p: 18px;
+  --text-title-light: rgba(15, 137, 174);
+  --text-body: rgb(96, 96, 96);
+  --border-blue: rgb(30, 92, 136);
+  --bg-yellow: rgba(255, 175, 0);
+  --bg-section: rgb(247, 248, 250);
+}
+
+*{
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1100px;
+  padding: 0px 30px;
+  margin: 0px auto;
+}
+.color-blue{
+  color: #4FD6FF;
+}
+.color-purple{
+  color: #6B5CB5;
+}
+
+.color-white{
+  color: white;
+}
+
+.font-weight-40{
+  font-size: 40px;
+  line-height: 50px;
+  font-family: "Open Sans";
+  font-weight: bold;
+}
+
+.font-weight-36{
+  font-size: 36px;
+  line-height: 42px;
+  font-family: "Open Sans";
+  font-weight: 600;
+}
+
+.font-weight-28{
+  font-size: 28px;
+  line-height: 34px;
+  font-family: "Open Sans";
+  font-weight: 600;
+}
+
+.font-weight-text{
+  font-size: 20px;
+  color: white;
+  font-family: "Open Sans";
+  font-weight: 500;
+}
+
+.box.open{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black!important;
+  display: flex!important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px!important;
+  padding: 20px;
+  z-index: 100;
+}
+
+.box.open .box-form{
+  margin-top: 0px!important;
+  min-height: 450px;
+  overflow: auto;
+}
+
+.box.open #close-icon{
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+/* button mobile */
+#mobile-button{
+  display: none;
+  background: #FF8A54;
+  font-size: 22px;
+  padding: 20px;
+  display: block;
+  width: 100%;
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  right: 0px;
+  z-index: 100;
+}
+
+#mobile-button, #close-icon{
+  display: none;
+}
+
+/* logo */
+
+#logo{
+  padding: 20px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.margin-bottom-0{
+  margin-bottom: 0px!important;
+}
+
+.btn-new-form{
+  font-size: 22px;
+  line-height: 24px;
+  margin: 50px auto 0px auto;
+  background: #FF8A54;
+  border-radius: 30px;
+  display: block;
+  max-width: 470px;
+  padding: 15px;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3 ease all;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.btn-new-form-2{
+  font-size: 22px;
+  line-height: 26px;
+  margin: 50px auto 0px auto;
+  background: #FF8A54;
+  border-radius: 30px;
+  display: block;
+  max-width: 600px;
+  padding: 15px;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3 ease all;
+  text-align: center;
+}
+
+.btn-new-form-2:hover , .btn-new-form:hover {
+  opacity: 0.8;
+}
+
+#logo:after{
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  content: "";
+  height: 10px;
+  background: url(../img/tarja.svg) center center no-repeat;
+  background-size: cover;
+}
+
+
+#logo img{
+  max-width: 300px;
+  max-height: 62px;
+}
+
+/* Section-01 Section */
+
+#section-01{
+  background: url(./../img/background-principal.jpg) center center no-repeat;
+  background-size: cover;
+  padding: 50px 0px;
+}
+
+#section-01 .box:nth-child(1){
+  margin: 0px auto;
+  text-align: center;
+}
+#section-01 .box:nth-child(1) h2{
+  margin: 20px 0px;
+}
+#section-01 .box:nth-child(1) p{
+  margin: 20px 0px;
+}
+
+#section-01 .box:nth-child(2) .box-form{
+  position: relative;
+  background: #6B5CB5;
+  -webkit-box-shadow: 1px 1px 12px 12px rgba(0,0,0,0.34); 
+  box-shadow: 1px 1px 12px 12px rgba(0,0,0,0.34);
+  padding: 30px;
+  max-width: 530px;
+  margin: 0px auto;
+  margin-top: 200px;
+}
+
+#section-01 .box-form:before{
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  background-color: purple;
+  background: url('./../img/tarja-form.svg') center center no-repeat;
+  width: 100%;
+  height: 9px;
+}
+
+#section-01 .box-form h2{
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#section-01 .box:nth-child(3){
+  text-align: center;
+}
+#section-01 .box:nth-child(3) .title{
+  margin: 50px 0px;
+}
+#section-01 .box:nth-child(3) p{
+  margin: 20px 0px;
+}
+
+
+#section-02{
+  padding: 50px 0px;
+  
+}
+
+#section-02 .title{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#section-02 .sub-title{
+  text-align: center;
+}
+
+#section-02 .block-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin: 50px 0px 70px 0px;
+}
+
+
+#section-02 .block-list .item{
+  padding: 15px;
+  background: #6B5CB5;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+  height: 130px;
+}
+
+#section-02 .block-list .item:before{
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  background-color: purple;
+  background: url('./../img/tarja.svg') center center no-repeat;
+  width: 100%;
+  height: 9px;
+}
+
+#section-02 .block-list .item .img{
+  margin-right: 15px;
+  display: flex;
+  align-items: flex-end;
+}
+
+#section-02 .block-list .item .img img{
+  max-height: 80px;
+  max-width: 60px;
+  margin-left: 10px;
+}
+
+#section-02 .block-list .item .description{
+  font-size: 18px;
+  color: white;
+}
+
+#section-02 .bloco__beneficios{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+#section-02 .bloco__beneficios .item{
+  text-align: center;
+
+}
+#section-02 .bloco__beneficios .item .beneficio-title{ margin: 20px 0px 5px; font-weight: bold; color: #505050; text-transform: uppercase;}
+#section-02 .bloco__beneficios .item .text{ color: #505050;}
+
+#section-03 .faixa-cinza{
+  background: #505050;
+  color: white;
+  text-align: center;
+  padding: 50px 0px;
+}
+
+#section-03 .bloco{ 
+  background: url(../img/background-men.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+#section-03 .bloco .container{
+  display: grid;
+  grid-template-columns: 1fr 1.1fr 1fr;
+}
+
+#section-03 .bloco .container .imagem{
+  display: flex;
+  align-items: flex-end;
+  margin-top: -20px;
+}
+
+#section-03 .bloco .container .imagem img{
+  max-width: 100%;
+}
+
+#section-03 .bloco .container .item:nth-child(1), #section-03 .bloco .container .item:nth-child(3){
+  margin-top: 50px;
+  text-align: center;
+  width: 110%;
+}
+
+#section-03 .bloco .container .item p{
+  color: white;
+}
+
+#section-04{
+  padding: 100px 15px;
+  background: #6B5CB5;
+  text-align: center;
+}
+
+#section-04 .title{
+  color: white;
+  text-align: center;
+}
+
+#section-04 a{
+  font-size: 22px;
+  line-height: 24px;
+  margin: 50px auto 0px auto;
+  background: #FF8A54;
+  border-radius: 30px;
+  display: block;
+  max-width: 470px;
+  padding: 15px;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3 ease all;
+}
+
+#section-04 a:hover{
+  opacity: 0.8;
+}
+.color-orange{
+  color: #FF8A54;
+}
+
+.color-blue2{
+   color: #274592;
+}
+footer{
+  text-align: center;
+  padding: 30px;
+  background: white;
+}
+
+.box-form h3{
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.box-form form .block-inputs{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 20px 0px 30px;
+}
+
+.box-form form label{
+  color: white;
+  font-size: 14px;
+}
+
+.box-form form label .error{
+  color: #4FD6FF;
+}
+
+
+.error-accept-legal{
+  font-size: 14px;
+  color: #4FD6FF;
+  font-weight: 400;
+  display: block;
+  margin-top: 10px;
+}
+
+.box-form form .block-inputs label input, .box-form form label select{
+  background: white;
+  padding: 0px 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  border: none;
+  font-size: 14px;
+  height: 36px;
+  color: black;
+  width: 100%;
+}
+
+.box-form form label select{
+  color: grey;
+}
+
+
+.box-form form button{
+  font-weight: bold;
+  font-size: 16px;
+  background: #FF8A54;
+  border-radius: 30px;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  transition: 0.3 ease all;
+  width: 100%;
+  cursor: pointer;
+}
+
+.box-form form button:hover{
+  opacity: 0.8;
+}
+
+@media (max-width: 992px) {
+  .d-mobile-hidden{
+    display: none;
+  }
+  #mobile-button, #close-icon{
+    display: flex;
+  }
+
+  #section-01 .box:nth-child(2){
+    display: none;
+  }
+  #section-01 .box:nth-child(2){
+
+  }
+  
+  #section-03 .bloco .container{
+    grid-template-columns: 1fr;
+    padding: 0px;
+  }
+
+  #section-03 .bloco .container .item:nth-child(1){
+    background: url(../img/bg-esquerda.jpg);
+  }
+  #section-03 .bloco .container .item:nth-child(3){
+    background: url(../img/bg-direita.jpg);
+  }
+
+  #section-03 .bloco .container .item:nth-child(2){
+    display: none;
+  }
+  #section-03 .bloco .container .item:nth-child(1), #section-03 .bloco .container .item:nth-child(3){
+    margin-top: 0px;
+    text-align: center;
+    width: 100%;
+    padding: 50px 15px;
+  }
+
+  #section-03 .faixa-cinza{
+    padding: 50px 0px 0px 0px;
+  }
+
+  #section-03 .faixa-cinza .imagem{
+    align-items: flex-end;
+    display: flex!important;
+    margin-top: 50px;
+  }
+
+  #section-03 .faixa-cinza .imagem img{
+    max-width: 100%;
+  }
+  #section-02 .block-list{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #section-04{
+    display: none;
+  }
+
+  footer{
+    padding: 30px 30px 100px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .box-form form .block-inputs{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 20px 0px 30px;
+  }
+
+  #section-01{
+    background: url(./../img/background-principal-mobile.jpg) center center no-repeat;
+    background-size: cover;
+    padding: 50px 0px;
+  }
+
+  #section-01 .box:nth-child(3) .title{
+    margin: 350px 0px 30px 0px;
+  }
+
+  .font-weight-40{
+    font-size: 28px;
+    line-height: 32px;
+    font-family: "Open Sans";
+    font-weight: bold;
+  }
+  
+  .font-weight-36{
+    font-size: 28px;
+    line-height: 32px;
+    font-family: "Open Sans";
+    font-weight: 600;
+  }
+  
+  .font-weight-28{
+    font-size: 20px;
+    line-height: 28px;
+    font-family: "Open Sans";
+    font-weight: 600;
+  }
+  
+  .font-weight-text{
+    font-size: 18px;
+    line-height: 22px;
+    color: white;
+    font-family: "Open Sans";
+    font-weight: 500;
+  }
+
+  br{
+    display: none;
+  }
+
+  #section-02 .block-list{
+    grid-template-columns: 1fr;
+  }
+  #section-02 .block-list .item{
+    height: 130px;
+    padding: 20px 20px;
+  }
+
+  #section-02 .bloco__beneficios{
+    grid-template-columns: 1fr;
+  }
+
+  #section-02 .bloco__beneficios .item .text{
+    max-width: 252px;
+    margin: 0px auto;
+  }
+}

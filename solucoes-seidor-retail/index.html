@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src =
+          "https://www.googletagmanager.com/gtm.js?id=GTM-TFHP53R" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soluções Seidor Retail</title>
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Garanta a integração de processos de negócios, gestão financeira e relacionamento com cliente com soluções Seidor Retail."
+    />
+    <meta name="keywords" content="" />
+
+    <!-- Socials -->
+    <meta property="og:title" content="Soluções Seidor Retail" />
+    <meta
+      property="og:description"
+      content="Garanta a integração de processos de negócios, gestão financeira e relacionamento com cliente com soluções Seidor Retail."
+    />
+    <meta
+      property="og:image"
+      content="https://bowe-landingpages-homologacao.netlify.app/seidor/solucoes-seidor-retail/assets/img/banner_de_compartilhamento.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://bowe-landingpages-homologacao.netlify.app/seidor/solucoes-seidor-retail/assets/img/banner_de_compartilhamento.jpg"
+    />
+
+    <meta name="twitter:title" content="Soluções Seidor Retail" />
+    <meta
+      name="twitter:description"
+      content="Garanta a integração de processos de negócios, gestão financeira e relacionamento com cliente com soluções Seidor Retail."
+    />
+    <meta
+      name="twitter:image"
+      content="https://bowe-landingpages-homologacao.netlify.app/seidor/solucoes-seidor-retail/assets/img/banner_de_compartilhamento_twitter.jpg"
+    />
+    <meta
+      name="twitter:card"
+      content="https://bowe-landingpages-homologacao.netlify.app/seidor/solucoes-seidor-retail/assets/img/banner_de_compartilhamento_twitter.jpg"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/img/favicon.svg" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TFHP53R"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!--Buttom Mobile-->
+    <button
+      class="primary-button"
+      id="mobile-button"
+      onclick="handleModal(true)"
+    >
+      Solicitar cotação
+    </button>
+
+    <!--Top Bar -->
+    <div class="top-bar">
+      <div class="logo-seidor-retail">
+        <figure>
+          <img
+            width="314"
+            height="90"
+            src="./assets/img/logo-retail.svg"
+            alt="Logo da empresa Seidor Retail"
+          />
+        </figure>
+      </div>
+    </div>
+    <!--End Top Bar -->
+
+    <!-- Fist Section -->
+    <section id="first">
+      <div class="container">
+        <div class="wrapper">
+          <div class="box">
+            <div class="text">
+              <h1>
+                Portfólio completo de soluções para acompanhar o seu negócio
+                varejista rumo à transformação digital
+              </h1>
+              <h2>
+                Tenha uma solução de gestão ERP SAP integrada ao seu sistema PDV
+                e aos seus canais de vendas online e que atende as suas
+                principais necessidades, resolvendo desafios do dia a dia.
+              </h2>
+              <p>
+                As aplicações do Seidor Retail solucionam os principais
+                problemas enfrentados pelo varejo, desde o back/front office até
+                a experiência com o cliente.
+              </p>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="box-form">
+              <img
+                src="./assets/img/icon-close.svg"
+                alt="Ícone com símbolo Xis"
+                id="close-icon"
+                onclick="handleModal(false)"
+              />
+              <p>
+                Preencha o formulário para conversar com nossos especialistas de
+                sistema para gestão.
+              </p>
+              <form id="contact">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Nome*"
+                  pattern="[A-Za-z ]+"
+                  title="Números não são aceitos"
+                  class="required"
+                />
+                <select
+                  name="cf_indique_o_seu_cargo"
+                  id="cargo"
+                  class="required"
+                >
+                  <option value="">Cargo*</option>
+                  <option value="Analista">Analista</option>
+                  <option value="Gerente">Gerente</option>
+                  <option value="Diretor">Diretor</option>
+                  <option value="Proprietário">Proprietário</option>
+                  <option value="Outros">Outros</option>
+                </select>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="E-mail corporativo*"
+                  class="required"
+                />
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="Telefone*"
+                  class="required"
+                />
+                <input
+                  type="text"
+                  name="business"
+                  id="business"
+                  placeholder="Empresa*"
+                  class="required"
+                />
+                <select class="required" name="cf_segmento" id="segmento">
+                  <option value="">Segmento*</option>
+                  <option value="Agronegócios">Agronegócios</option>
+                  <option value="Automotivo">Automotivo</option>
+                  <option value="Banco">Banco</option>
+                  <option value="Distribuição">Distribuição</option>
+                  <option value="Esportes e Entretenimento">
+                    Esportes e Entretenimento
+                  </option>
+
+                  <option value="Indústria">Indústria</option>
+
+                  <option value="Mineiração">Mineiração</option>
+                  <option value="Mídia">Mídia</option>
+                  <option value="Produtos Texteis">Produtos Texteis</option>
+                  <option value="Serviços">Serviços</option>
+                  <option value="Tecnologia">Tecnologia</option>
+                  <option value="Telecomunicações">Telecomunicações</option>
+                  <option value="Transporte e Logística">
+                    Transporte e Logística
+                  </option>
+                  <option value="Turismo e Viagens">Turismo e Viagens</option>
+                  <option value="Utilities">Utilities</option>
+                  <option value="Varejo">Varejo</option>
+                  <option value="Óleo e Gás">Óleo e Gás</option>
+                  <option value="Outros">Outros</option>
+                </select>
+
+                <select
+                  name="tipo-industria"
+                  id="tipo-industria"
+                  style="display: none"
+                >
+                  <option>Selecione uma indústria</option>
+                  <option value="Indústria de Alimentos">
+                    Indústria de Alimentos
+                  </option>
+                  <option value="Indústria de Bens de Consumo">
+                    Indústria de Bens de Consumo
+                  </option>
+                  <option value="Indústria de Cosméticos">
+                    Indústria de Cosméticos
+                  </option>
+                  <option value="Indústria de Metais">
+                    Indústria de Metais
+                  </option>
+                  <option value="Indústria de Máquinas e Componentes">
+                    Indústria de Máquinas e Componentes
+                  </option>
+                  <option value="Indústria de Papel e Celulose">
+                    Indústria de Papel e Celulose
+                  </option>
+                  <option value="Indústria Materiais de Construção">
+                    Indústria Materiais de Construção
+                  </option>
+                  <option value="Indústria Metalúrgica">
+                    Indústria Metalúrgica
+                  </option>
+                  <option value="Indústria Química e Farmacêutica">
+                    Indústria Química e Farmacêutica
+                  </option>
+                </select>
+
+                <select
+                  name="tipo-servico"
+                  id="tipo-servico"
+                  style="display: none"
+                >
+                  <option>Selecione um serviço</option>
+                  <option value="Consultoria">Consultoria</option>
+                  <option value="Educação">Educação</option>
+                  <option value="Engenharia e Construção">
+                    Engenharia e Construção
+                  </option>
+                  <option value="Segurança">Segurança</option>
+                  <option value="Seguros">Seguros</option>
+                  <option value="Saúde">Saúde</option>
+                  <option value="Profissionais">Profissionais</option>
+                  <option value="Públicos ">Públicos</option>
+                </select>
+
+                <select name="cf_faturamento" id="faturamento" class="required">
+                  <option value="">Faturamento*</option>
+                  <option value="Abaixo de 30 milhões">
+                    Abaixo de 30 milhões
+                  </option>
+                  <option value="Entre 30 e 99 milhões">
+                    Entre 30 e 99 milhões
+                  </option>
+                  <option value="Entre 100 e 400 milhões">
+                    Entre 100 e 400 milhões
+                  </option>
+                  <option value="Acima de 400 milhões">
+                    Acima de 400 milhões
+                  </option>
+                </select>
+                <select
+                  name="cf_numero_de_funcionarios"
+                  id="number-of-employees"
+                  title="Selecione o número de funcionários da sua empresa"
+                  class="required"
+                >
+                  <option value="">N° de Funcionários*</option>
+                  <option value="1 a 49 pessoas">1 a 49 pessoas</option>
+                  <option value="50 a 99 pessoas">50 a 99 pessoas</option>
+                  <option value="100 a 499 pessoas">100 a 499 pessoas</option>
+                  <option value="Acima de 500 pessoas">
+                    Acima de 500 pessoas
+                  </option>
+                </select>
+                <label for="accept-legal">
+                  <input
+                    type="checkbox"
+                    name="cf_estou_ciente_que_ao_enviar_esse_formulario_os_dados_ins"
+                    id="accept-legal"
+                    class="required"
+                  />
+                  Estou ciente que ao enviar esse formulário, os dados inseridos
+                  serão entregues e armazenados pela empresa para fins de
+                  contato. Os dados informados nunca serão divulgados a
+                  terceiros.*
+                </label>
+                <button type="button" class="primary-button" id="submit-button">
+                  Solicitar cotação
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fim Fist Section -->
+
+    <!-- Second Section -->
+    <section id="second">
+      <div class="container">
+        <div class="titulo">
+          <h2>Garanta a <span>integração de processos</span></h2>
+        </div>
+        <div class="wrapper">
+          <div class="box">
+            <div class="image-grafico">
+              <figure>
+                <img
+                  src="./assets/img/infografico.svg"
+                  alt="Grafico representando o fluxo de funcionamento"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="box">
+            <div class="same-line">
+              <div class="wrapper-lista">
+                <div class="lista">
+                  <h3>ERP SAP:</h3>
+                  <ul>
+                    <li>SAP S/4HANA</li>
+                    <li>SAP Business One</li>
+                  </ul>
+                </div>
+                <div class="lista">
+                  <h3>Canais de Vendas:</h3>
+                  <ul>
+                    <li>PDV</li>
+                    <li>E-Commerce</li>
+                    <li>Marketplace</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="wrapper-lista">
+                <div class="lista">
+                  <h3>Aplicações Seidor Retail:</h3>
+                  <ul>
+                    <li>Tesouraria avançada</li>
+                    <li>Vendas assistidas</li>
+                    <li>Monitor de rupturas</li>
+                    <li>Devoluções automatizadas</li>
+                    <li>Conciliador de cartões</li>
+                    <li>Autorizador de vendas</li>
+                    <li>Automatização do contrato de vendas</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="wrapper-lista">
+              <div class="text">
+                <h3>Para negócios, financeiro e relacionamento com cliente</h3>
+                <span class="divider"></span>
+                <p>
+                  Com soluções e apps by Seidor Retail, você conecta sua loja
+                  física ao ambiente online. Oferecendo controle de fluxo de
+                  caixa, gestão de estoque, gestão de mix de produtos em
+                  diversos PDVs e muito mais.
+                </p>
+              </div>
+
+              <div class="lista">
+                <ul>
+                  <li>Solução conectada com todos os PDVs do mercado</li>
+                  <li>Integrado com as maiores plataformas de pagamento</li>
+                  <li>
+                    Maiores especialistas do varejo para apoiar o seu projeto
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <button class="primary-button" onclick="scrollToForm()">
+            INTEGRAR OS MEUS PROCESSOS
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Fim Second Section -->
+
+    <!--Third Section>-->
+    <section id="third">
+      <div class="container">
+        <div class="titulo">
+          <h3><span>Diferenciais das aplicações</span> Seidor Retail</h3>
+          <p>Você só encontra com as nossas soluções.</p>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <figure>
+              <img
+                width="85px"
+                height="85px"
+                src="./assets/img/icone-dinheiro.svg"
+                alt=""
+              />
+            </figure>
+            <h3>Tesouraria avançada</h3>
+            <div class="list">
+              <ul>
+                <li>Integração de Vendas</li>
+                <li>Sangria</li>
+                <li>Movimento de numerário</li>
+                <li>Relatórios Gerenciais</li>
+                <li>Fechamento de Caixa com Workflow</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <figure>
+              <img
+                width="85px"
+                height="85px"
+                src="./assets/img/icone-celular.svg"
+                alt=""
+              />
+            </figure>
+            <h3>Vendas assistidas</h3>
+            <div class="list">
+              <ul>
+                <li>Cadastro de Clientes</li>
+                <li>Orçamentos</li>
+                <li>Pedidos de Venda</li>
+                <li>Controle de Lista de Preços por Cliente e Canal</li>
+                <li>Cross Selling e Up Selling</li>
+                <li>Auditoria e Rastreabilidade</li>
+                <li>Gráficos e Relatórios de Vendas</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <figure>
+              <img
+                width="85px"
+                height="85px"
+                src="./assets/img/icone-link.svg"
+                alt=""
+              />
+            </figure>
+            <h3>Monitor de rupturas</h3>
+            <div class="list">
+              <ul>
+                <li>
+                  Monitoramento de produtos com ruptura diretamente na Gôndola
+                </li>
+                <li>
+                  Sinalização de Produtos que não registraram Vendas no PDV
+                </li>
+                <li>Parametrizável por período, produtos</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <figure>
+              <img
+                width="85px"
+                height="85px"
+                src="./assets/img/icone-caminhao.svg"
+                alt=""
+              />
+            </figure>
+            <h3>Devoluções automatizadas</h3>
+            <div class="list">
+              <ul>
+                <li>Gestão e Controle automatizados das Devoluções</li>
+                <li>Devolução de Cupons Fiscais</li>
+                <li>Garantia Estendida</li>
+                <li>Devolução de NF-es</li>
+                <li>Cancelamento de Ordens de Vendas</li>
+                <li>Coleta de Mercadoria devolvida</li>
+                <li>Automatização de Devolução ao Fornecedor</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <figure>
+              <img
+                width="85px"
+                height="85px"
+                src="./assets/img/icone-cartao.svg"
+                alt=""
+              />
+            </figure>
+            <h3>Conciliador de cartões</h3>
+            <div class="list">
+              <ul>
+                <li>Apropriação automática de taxas administrativas</li>
+                <li>Conciliação com os Arquivos das Administradoras</li>
+                <li>Apuração automática de diferenças</li>
+                <li>Conciliação de Vendas, Pagamentos e Bancária</li>
+                <li>Rastreabilidade e histórico</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <figure>
+              <img
+                width="85px"
+                height="85px"
+                src="./assets/img/icone-cellphone.svg"
+                alt=""
+              />
+            </figure>
+            <h3>Autorizador de vendas</h3>
+            <div class="list">
+              <ul>
+                <li>Gerenciamento de convênios Conveniados e GIFT Card</li>
+                <li>Gerenciamento de Private Label</li>
+                <li>Gerenciamento e Manutenção de Limites</li>
+                <li>Bloqueio automático de Inadimplentes</li>
+                <li>Geração de Cartões</li>
+                <li>Automação com Sistemas de PDV e Vendas Offline</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <figure>
+              <img
+                width="85px"
+                height="85px"
+                src="./assets/img/icone-aperto-maos.svg"
+                alt=""
+              />
+            </figure>
+            <h3>Automatização do contrato de vendas</h3>
+            <div class="list">
+              <ul>
+                <li>
+                  Gestão e Controle automatizados de Contratos de Verbas e
+                  Acordos Comerciais
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <button class="primary-button" onclick="scrollToForm()">
+            APLICAR SOLUÇÕES SEIDOR RETAIL
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--Fourth Section-->
+    <section id="fourth">
+      <div class="titulo">
+        <h3><span>Com Seidor Retail,</span> o seu negócio reúne:</h3>
+      </div>
+      <div class="container">
+        <div class="wrapper">
+          <div class="box">
+            <div class="vantagens">
+              <div class="item">
+                <figure>
+                  <img src="./assets/img/imagem-1.jpg" alt="" />
+                </figure>
+                <p>
+                  Sistema de contabilidade para pagar, receber, acessar crédito,
+                  otimizar tesouraria e ter ativo fixo, além de insights com ERP
+                  SAP.
+                </p>
+              </div>
+              <div class="item">
+                <figure>
+                  <img src="./assets/img/imagem-2.jpg" alt="" />
+                </figure>
+                <p>
+                  Omnicanalidade com interações multicanais, visão única do
+                  cliente, experiência personalizada, estoque e precificação
+                  omnicanal, além de vendas em real time.
+                </p>
+              </div>
+              <div class="item">
+                <figure>
+                  <img src="./assets/img/imagem-3.jpg" alt="" />
+                </figure>
+                <p>
+                  Frentes de lojas com recebimento e inventário, informações do
+                  produto na loja, produção, carrinho B2B/B2C, promoções,
+                  distribuição, compras e controle de verbas.
+                </p>
+              </div>
+              <div class="item">
+                <figure>
+                  <img src="./assets/img/imagem-4.jpg" alt="" />
+                </figure>
+                <p>
+                  CRM e Visão 360º dos clientes com acesso a informações
+                  atualizadas de vendas e marketing e histórico de pedidos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <button class="primary-button" onclick="scrollToForm()">
+            QUERO INTEGRAR OS MEUS SISTEMAS
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--Fim Fourth Section-->
+
+    <!--Fifth Section-->
+    <section id="fifth">
+      <div class="container">
+        <div class="box">
+          <div class="titulo">
+            <h2>
+              Soluções com <span>rápida implantação</span> utilizando as
+              melhores práticas de sistema
+            </h2>
+            <p>
+              Trabalhamos para proporcionar economia digital, expansão e
+              vantagem competitiva para sua empresa.
+            </p>
+          </div>
+
+          <div class="items">
+            <div class="item">
+              <figure>
+                <img src="./assets/img/icone-engrenagesns.svg" alt="" />
+              </figure>
+              <p>Gerenciamento de negócios de ponta a ponta.</p>
+            </div>
+
+            <div class="item">
+              <figure>
+                <img src="./assets/img/icone-etiqueta.svg" alt="" />
+              </figure>
+              <p>
+                Acesso a informações atualizadas de vendas e marketing por CRM.
+              </p>
+            </div>
+
+            <div class="item">
+              <figure>
+                <img src="./assets/img/icone-caixa.svg" alt="" />
+              </figure>
+              <p>Busca, contagem e postagem de recebimento de produtos.</p>
+            </div>
+
+            <div class="item">
+              <figure>
+                <img src="./assets/img/icone-setas-invertidas.svg" alt="" />
+              </figure>
+              <p>
+                Possibilidade de ajustar e transferir estoque e encomendar e
+                transferir produtos.
+              </p>
+            </div>
+
+            <div class="item">
+              <figure>
+                <img src="./assets/img/icone-lampada.svg" alt="" />
+              </figure>
+              <p>
+                Soluções específicas para áreas de finanças, vendas, lojas,
+                compras, estoque e cadastros.
+              </p>
+            </div>
+          </div>
+
+          <div class="button">
+            <button class="primary-button" onclick="scrollToForm()">
+              IMPLEMENTAR NO MEU NEGÓCIO
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Fim Fifth Section-->
+
+    <!--Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="wrapper">
+          <div class="box">
+            <figure>
+              <img
+                style="max-width: 350px"
+                src="./assets/img/grupo-partners.png"
+                alt="Conjunto de logos contendo as empresas Seidor, SAP Platinum partner e Seidor Patneres Awwards 2021"
+              />
+            </figure>
+          </div>
+          <div class="box">
+            <p>Copyright © 2021. Todos os Direitos Reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Fim Footer -->
+
+    <!-- Main Script -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Data Mask -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-mask-plugin@1.14.16/dist/jquery.mask.min.js"></script>
+
+    <!-- INTEGRAÇÃO RD STATION -->
+    <script
+      type="text/javascript"
+      async
+      src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/279dff83-5ddf-487b-be6f-9fd7f0733101-loader.js"
+    ></script>
+
+    <!-- Main Script -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

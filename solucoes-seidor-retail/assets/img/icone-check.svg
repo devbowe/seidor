@@ -1,0 +1,10 @@
+<svg id="icone-check" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.002" height="25" viewBox="0 0 25.002 25">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_2257" data-name="Retângulo 2257" width="25.002" height="25" fill="#f6880b"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_34220" data-name="Grupo 34220" transform="translate(0 0)" clip-path="url(#clip-path)">
+    <path id="Caminho_24744" data-name="Caminho 24744" d="M7.374,10.126,5.63,11.878l5.62,5.622L23.749,5,22,3.247,11.249,14ZM22.5,12.5a10,10,0,1,1-10-10,9.762,9.762,0,0,1,2.752.372l2-2A15.2,15.2,0,0,0,12.5,0,12.5,12.5,0,1,0,25,12.5Z" transform="translate(0 0)" fill="#f6880b"/>
+  </g>
+</svg>

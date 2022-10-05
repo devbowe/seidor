@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: calc(60% + 0.8vmin) !important;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: var(--text-body);
+}
+
+/* Global Styles */
+:root {
+  --font-h1: 38px;
+  --font-h2: 33px;
+  --font-h3: 24px;
+  --font-p: 18px;
+  --text-title-light: rgba(15, 137, 174);
+  --text-body: rgb(96, 96, 96);
+  --border-blue: rgb(30, 92, 136);
+  --bg-yellow: rgba(255, 175, 0);
+  --bg-section: rgb(247, 248, 250);
+}
+
+.primary-button {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  background: var(--bg-yellow);
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  border: none;
+  width: fit-content;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0 4rem;
+}
+
+/* Logo section */
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  padding: 2rem 0;
+}
+
+#logo img {
+  max-width: 180px;
+}
+
+#first {
+  padding: 3rem 0;
+  background: url("../img/bg-tp.png") center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: min(84vh);
+}
+
+#first .container {
+  max-width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  color: rgb(255, 255, 255);
+  gap: 3rem;
+}
+
+#first .container .text h1 {
+  font-size: var(--font-h1);
+  color: var(--text-title-light);
+  margin-bottom: 4rem;
+}
+
+#first .container .text h2 {
+  font-size: var(--font-h3);
+  font-weight: normal;
+  margin-bottom: 4rem;
+}
+
+#first .container .text p {
+  font-size: var(--font-h3);
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+
+#first .container .box:nth-child(2) .wrapper-socials-and-button .box {
+  justify-content: flex-end;
+  display: flex;
+  padding-right: 3rem;
+}
+
+#first .container .sociais ul {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  margin-top: 3rem;
+  padding-left: 5rem;
+}
+
+@media (max-width: 900px) {
+  :root {
+    --font-h1: 26px;
+    --font-h2: 22px;
+    --font-h3: 16px;
+    --font-p: 12px;
+  }
+
+  .primary-button {
+    width: 100%;
+    padding: 0 2rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 0;
+  }
+
+  #first {
+    background: url("../img/bg-mobile-tp.png") right center/cover no-repeat;
+    padding: 0 0 6rem;
+    height: inherit;
+    position: relative;
+  }
+
+  #first .container .text {
+    margin-top: 30rem;
+  }
+
+  #first .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #first .container .text h1,
+  #first .container .text h2,
+  #first .container .text p {
+    text-align: center;
+  }
+
+  #first .container .box:nth-child(2) .wrapper-socials-and-button {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #first .container .box:nth-child(2) .wrapper-socials-and-button .box {
+    justify-content: center;
+    padding: 0;
+  }
+
+  #first .container .partners-mobile {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+
+  #first .container .partners-mobile ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #first .container .partners-mobile ul li img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #first .container .partners-mobile ul li:nth-child(2) {
+    margin: 0 2rem;
+  }
+
+  #first .container .partners {
+    display: none;
+  }
+
+  #first .container .sociais ul {
+    justify-content: center;
+    padding-left: 0;
+  }
+}

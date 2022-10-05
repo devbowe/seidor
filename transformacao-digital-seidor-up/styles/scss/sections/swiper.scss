@@ -1,0 +1,17 @@
+.outside {
+    padding-block: 4rem;
+    position: relative;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+
+    .swiper-slide {
+        background-color: var(--clr-neutral-100);
+        display: grid;
+        place-items: center;
+        height: auto;
+        border-radius: 20px;
+    }
+}

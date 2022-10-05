@@ -1,0 +1,114 @@
+$colors: (
+    "clr-neutral-100": #ffffff,
+    "clr-neutral-400": #9fa2ac,
+    "clr-neutral-600": #515761,
+
+    "clr-accent-blue": #1a2d6c,
+    "clr-accent-blue-dark": #061439,
+    "clr-accent-blue-light": #66b6ff,
+);
+
+:root {
+    @each $name, $value in $colors {
+        --#{$name}: #{$value};
+    }
+}
+
+:root {
+    --ff-primary: "Poppins", sans-serif;
+    --spacing: 4rem;
+
+    --clr-placeholder: #707070;
+    --clr-field: #212121;
+
+    @media screen and (min-width: 45em) {
+        --spacing: 5rem;
+    }
+
+    @media screen and (min-width: 70em) {
+        --spacing: 5.5rem;
+    }
+}
+
+html {
+    scroll-padding-top: 2rem;
+    font-size: 93.75%;
+
+    @media screen and (min-width: 45em) {
+        font-size: 100%;
+    }
+}
+
+body {
+    font-family: var(--ff-primary);
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+p {
+    max-width: var(--width, unset);
+}
+
+.center {
+    margin-inline: auto;
+    text-align: center;
+}
+
+.container {
+    width: min(90%, 77.25em);
+    margin-inline: auto;
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+.spacing {
+    padding-block: var(--spacing);
+}
+
+.flow {
+    p + p {
+        margin-top: 1rem;
+    }
+}
+
+@each $name, $value in $colors {
+    .#{$name} {
+        color: #{$value};
+    }
+}
+
+$fontWeights: (300, 400, 500, 600, 700);
+
+@each $weight in $fontWeights {
+    .fw-#{$weight} {
+        font-weight: $weight;
+    }
+}
+
+::selection {
+    background-color: #66b6ff;
+    color: var(--clr-neutral-100);
+}
+
+::-webkit-scrollbar {
+    width: 0.75em;
+}
+
+::-webkit-scrollbar-track {
+    background: #66b6ff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--clr-neutral-100);
+    border: 2px solid #66b6ff;
+    border-radius: 2px;
+}
+
+body {
+    padding-right: 0 !important;
+}
